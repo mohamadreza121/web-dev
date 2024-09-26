@@ -1,0 +1,108 @@
+.body {
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: gray;
+  border: 5px solid black;
+  border-color: black;
+
+  }
+
+.navbar button {
+  background-color: black;
+  color: whitesmoke;
+  border: black solid;
+  padding: 10px 20px;
+  margin-right: 25px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.navbar button:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+
+
+#about-me-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 25px;
+}
+
+.contact-form-container {
+  background-color: darkgray;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+#message {
+  height: 150px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.checkbox-container input {
+  margin-right: 10px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: gray;
+  color: whitesmoke;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.contact-form button:hover {
+ background-color: lightgray;
+ color: black;
+}
+
+#ending {
+  text-align: center;
+}
+
+#ending2 {
+  text-align: center;
+}

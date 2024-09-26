@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      My Project
+    </title>
+    <link rel="stylesheet" href="/assignment1/projects.css">
+    <link href="/assignment1/assignment1.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
+    <link href="/assignment1/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)">
+    <link href="/assignment1/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
+  </head>
+  <body class="body">
+    <div id="wrapper">
+      <header>
+        <nav class="navbar">
+          <h5>
+            <a href="/assignment1/aboutme.html">
+              <img id="about-me-image" src="/assignment1/my-image.jpg" title="About me">
+            </a>
+            <a href="/index.html">
+              <button>
+                Home
+              </button>
+            </a>
+            <a href="/assignment1/projects.html">
+              <button>
+                Projects
+              </button>
+            </a>
+            <a href="/assignment1/contact.html">
+              <button>
+                Contact Me
+              </button>
+            </a>
+          </h5>
+        </nav>
+      </header>
+      <article>
+        <h1>
+          Project Overview: Design, Implementation, and Maintenance of a Small Office Network
+        </h1>
+        <p>
+          Objective: To design, implement, and maintain a robust and efficient network for a small branch office.
+        </p>
+        <br>
+        <section>
+          <h3>
+            Network Design:
+          </h3>
+          <p>
+            <strong>Architecture:</strong> Utilized a three-tier design to ensure scalability and performance.
+          </p>
+          <p>
+            <strong>Redundancy:</strong> Deployed two routers connected to different ISPs to provide redundancy and minimize downtime. Implemented IP SLA with tracking to automatically reroute traffic through ISP2 in case ISP1 fails.
+          </p>
+          <p>
+            <strong>Switching:</strong> Installed two Cisco Catalyst switches for the LAN, segmenting the network into four VLANs: Human Resources, Executive Office, Sales, and IT.
+          </p>
+          <p>
+            <strong>Security:</strong> Integrated ASA firewalls to secure connections to the internet.
+          </p>
+          <br>
+          <h3>
+            End-User Connectivity:
+          </h3>
+          <p>
+            <strong>Telephony:</strong> Deployed Yealink IP telephones for each end user.
+          </p>
+          <p>
+            <strong>Power over Ethernet (PoE):</strong> Utilized PoE ports to connect both PCs and phones to the switches through a single port, simplifying cabling and reducing infrastructure costs.
+          </p>
+        </section>
+        
+      </article>
+      <footer>
+        <nav class="navbar">
+          <h6>
+            <a href="/assignment1/aboutme.html">
+              <img id="about-me-image" src="/assignment1/my-image.jpg" title="About me">
+            </a>
+            <a href="/index.html">
+              <button>
+                Home
+              </button>
+            </a>
+            <a href="/assignment1/projects.html">
+              <button>
+                Projects
+              </button>
+            </a>
+            <a href="/assignment1/contact.html">
+              <button>
+                Contact Me
+              </button>
+            </a>
+          </h6>
+        </nav>
+      </footer>
+  </body>
+</html>
