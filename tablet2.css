@@ -1,0 +1,108 @@
+/* Contact webpage for tablet size */
+
+.body {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+.sidebarnames {
+  color: black;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 72px;
+  height: 100%;
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+.sidebar-link {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-link img {
+  height: 24px;
+}
+
+.sidebar-link div {
+  font-size: 10px;
+}
+
+article h1 {
+  color: rgba(245, 245, 245, 0.801);
+  text-align: center;
+}
+
+.contact-form-container {
+  background-color: rgba(245, 245, 245, 0.8);
+  padding: 20px;
+  margin-left: 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  border-radius: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 14px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+#message {
+  height: 120px;
+}
+
+.contact-form button {
+  padding: 12px;
+  font-size: 14px;
+}
+
+.checkbox-container {
+  margin-bottom: 15px;
+}
+
+#ending, #ending2 {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+  color: rgba(245, 245, 245, 0.9);
+}
+
+
+footer a img {
+  width: 25px;
+  height: 25px;
+}
+
+a {
+  text-decoration: none;
+}

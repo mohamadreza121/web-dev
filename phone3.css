@@ -1,0 +1,160 @@
+/* About me web page for phone size */
+
+.body {
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  color: rgba(245, 245, 245, 0.9);
+  padding-top: 60px;
+}
+
+.content-container {
+  margin-left: 60px; 
+  padding: 15px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#name-title {
+  font-size: 28px; 
+  border-bottom: 1px solid rgba(245, 245, 245, 0.9);
+  padding-bottom: 8px;
+}
+
+.intro-text {
+  font-size: 16px; 
+  margin-top: 8px;
+}
+
+.sidebarnames {
+  color: black;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+.sidebar-link {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-link img {
+  height: 20px;
+}
+
+.sidebar-link div {
+  font-size: 8px;
+}
+
+.columns-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.column {
+  margin-bottom: 20px;
+}
+
+#profile-img,
+video {
+  width: 100%;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.resume-download {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.download-button {
+  background-color: gray;
+  color: whitesmoke;
+  padding: 8px 15px;
+  font-size: 14px;
+  border: none;
+}
+
+.download-button img {
+  margin-right: 8px;
+}
+
+.social-buttons {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.social-btn {
+  background-color: gray;
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.social-btn img {
+  margin-right: 8px;
+}
+
+.download-btn:hover,
+.instagram-btn:hover,
+.linkedin-btn:hover {
+  background-color: rgba(43, 226, 202, 0.856);
+}
+
+.instagram-btn:hover {
+  background-color: #e1306c;
+}
+
+.linkedin-btn:hover {
+  background-color: #0077b5;
+}
+
+.top-button {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.top-button img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+}
+
+#social-text {
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+#social-text-last {
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+main {
+  margin-top: 100px;
+}
+
+a {
+  text-decoration: none;
+}

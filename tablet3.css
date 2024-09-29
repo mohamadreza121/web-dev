@@ -1,0 +1,163 @@
+/* About me webpage for tablet size */
+
+.body {
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  color: rgba(245, 245, 245, 0.9);
+  display: block;
+  padding-top: 70px;
+}
+
+.content-container {
+  margin-left: 70px;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#name-title {
+  font-size: 32px; 
+  border-bottom: 1px solid rgba(245, 245, 245, 0.9);
+  padding-bottom: 8px;
+}
+
+.intro-text {
+  font-size: 16px; 
+  margin-top: 10px;
+}
+
+.sidebarnames {
+  color: black;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 70px; 
+  height: 100%;
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+.sidebar-link {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-link img {
+  height: 24px;
+}
+
+.sidebar-link div {
+  font-size: 10px;
+}
+
+.columns-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.column {
+  flex-basis: 48%; 
+  text-align: center;
+}
+
+#profile-img,
+video {
+  
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.resume-download {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.download-button {
+  background-color: gray;
+  color: whitesmoke;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  
+}
+
+.download-button img {
+  margin-right: 10px;
+}
+
+.social-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+.social-btn {
+  background-color: gray;
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.social-btn img {
+  margin-right: 10px;
+}
+
+.download-btn:hover,
+.instagram-btn:hover,
+.linkedin-btn:hover {
+  background-color: rgba(43, 226, 202, 0.856);
+}
+
+.instagram-btn:hover {
+  background-color: #e1306c;
+}
+
+.linkedin-btn:hover {
+  background-color: #0077b5;
+}
+
+.top-button {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.top-button img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+
+#social-text {
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+#social-text-last {
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+main {
+  margin-top: 150px;
+}
+
+a {
+  text-decoration: none;
+}

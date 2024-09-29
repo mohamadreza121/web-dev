@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      Contact Me
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="contact.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
+    <link href="tablet2.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)">
+    <link href="phone2.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
+  </head>
+  <body class="body">
+    <div>
+      <header class="nav-container">
+        <nav class="sidebar">
+          <a href="aboutme.html">
+          <div class="sidebar-link">
+            <img src="about.png" title="about button">
+            <div class="sidebarnames">About</div>
+          </div>
+          </a>
+          <a href="index.html">
+          <div class="sidebar-link">
+            <img src="homepage.png" title="Home button">
+            <div class="sidebarnames">Home</div>
+          </div>
+          </a>
+          <a href="projects.html">
+          <div class="sidebar-link">
+            <img src="project.png" title="projects button">
+            <div class="sidebarnames">Projects</div>
+          </div>
+          </a>
+          <a href="contact.html">
+          <div class="sidebar-link">
+            <img src="contact.png" title="contact button">
+            <div class="sidebarnames">Contact</div>
+          </div>
+          </a>
+        </nav>
+      </header>
+      <article>
+        <h1>
+          Best Way To Contact Me
+        </h1>
+        <br>
+        <div class="contact-form-container">
+          <form class="contact-form">
+            <h2>Contact Me</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" autocomplete="off">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required autocomplete="off"></textarea>
+
+            <div class="checkbox-container">
+              <input type="checkbox" id="no-message" name="no-message">
+              <label for="no-message">I don't want to write a message</label>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <br>
+        <section>
+          <h4 id="ending">I will reach out to you as soon as possible!</h4>
+        </section>
+        <section>
+          <h5 id="ending2">You can also reach out to me through email <a href="mailto:mrheidarpoor7@gmail.com">mrheidarpoor7@gmail.com</a></h5>
+        </section>
+      </article>
+      <footer>
+        <a href="#">
+          <img src="up-arrow.jpeg" title="move to the top of the website" alt="Arrow up to get back to top of the image" height="30">
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
