@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>animation</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    .box {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      padding: 15px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 25px;
+      text-align: center;
+      border-radius: 60px;
+      animation: shape-converter 3s infinite ;
+      
+    }
+
+    @keyframes shape-converter {
+      0% {
+        background-color: blueviolet; opacity: 1;
+      }
+      50% {
+        background-color: blue; border-radius: 0px; transform: translatex(150px); opacity: 0.3; rotate: 45deg;
+      }
+
+      100% {
+        background-color: lightblue; opacity: 1;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p>
+      Animation Testing
+    </p>
+  </div>
+</body>
+</html>

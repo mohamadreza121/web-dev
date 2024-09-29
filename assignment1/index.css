@@ -1,0 +1,106 @@
+/* Home webpage for laptop size */
+
+.body {
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+main {
+  margin-left: 60px;
+  padding: 40px;
+  text-align: center;
+}
+
+
+.intro h1 {
+  color: rgba(245, 245, 245, 0.801);
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  color: rgba(245, 245, 245, 0.801);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.intro img {
+  max-width: 450px;
+  border-radius: 50%;
+  border: 5px solid black;
+  margin-bottom: 400px;
+  filter: blur(0.6px);
+}
+
+.sidebarnames {
+  color: black;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 72px;
+  height: 100%;
+  background-color: rgba(245, 245, 245, 0.801);
+}
+
+.sidebar-link {
+  height: 74px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.15s;
+}
+
+.sidebar-link:hover {
+  opacity: 0.6;
+}
+
+.sidebar-link:active {
+  opacity: 0.3;
+}
+
+.sidebar-link img {
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.sidebar-link div {
+  font-size: 10px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+footer a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+
+footer p {
+  color: rgba(245, 245, 245, 0.801);
+  margin: 5px 0;
+}
+
+footer a {
+  color: rgba(245, 245, 245, 0.801);
+}
+
+mark {
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}

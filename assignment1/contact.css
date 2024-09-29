@@ -1,51 +1,69 @@
+/* Contact webpage for laptop size */
+
 .body {
-  background-color: lightgray;
+  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   margin: 0;
 }
 
-
-.navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  background-color: gray;
-  border: 5px solid black;
-  border-color: black;
-
-  }
-
-.navbar button {
-  background-color: black;
-  color: whitesmoke;
-  border: black solid;
-  padding: 10px 20px;
-  margin-right: 25px;
-  cursor: pointer;
-  transition: all 0.15s;
-}
-
-.navbar button:hover {
-  background-color: whitesmoke;
+.sidebarnames {
   color: black;
 }
 
 
-
-#about-me-image {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  margin-right: 25px;
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 72px;
+  height: 100%;
+  background-color: rgba(245, 245, 245, 0.801);
 }
 
+.sidebar-link {
+  height: 74px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.15s;
+}
+
+.sidebar-link:hover {
+  opacity: 0.6;
+}
+
+.sidebar-link:active {
+  opacity: 0.3;
+}
+
+.sidebar-link img {
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.sidebar-link div {
+  font-size: 10px;
+}
+
+article h1 {
+  color: rgba(245, 245, 245, 0.801);
+  text-align: center;
+}
+
+
+
 .contact-form-container {
-  background-color: darkgray;
-  padding: 20px;
+  background-color: rgba(245, 245, 245, 0.801);
+  padding: 25px;
+  width: 100%;
   border-radius: 10px;
+  margin-left: 100px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -101,8 +119,30 @@
 
 #ending {
   text-align: center;
+  color: rgba(245, 245, 245, 0.9);
 }
 
 #ending2 {
   text-align: center;
+  color: rgba(245, 245, 245, 0.9);
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+footer a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+
+
+a {
+  text-decoration: none;
 }

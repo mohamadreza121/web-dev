@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Slideshow1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+      .Slideshow, .Frame {
+        position: relative;
+        height: 412px;
+        width: 412px;
+        margin: auto;
+      }
+
+      img{
+        width: 100%;
+
+      }
+
+
+      .slide {
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transition: opacity 5s;
+      }
+
+      .show:checked +.slide {
+        opacity: 1;
+      }
+
+      .button {
+        display: inline-block;
+      }
+      .btn-lbl {
+        background-color: black;
+        cursor: pointer;
+        width: 1rem;
+        height: 1rem;
+        padding: 1rem;
+        font-size: 1rem;
+        text-align: center;
+        border-radius: .5rem;
+        color: white;
+
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="Frame">
+      <h1>Roses</h1>
+      <div class="Sildeshow">
+        <input type="radio" name="button" class="show" id="one" checked="checked">
+          <div class="slide">
+            <a target="_blank" title="PinkFlower" href="/week4/Image1.jpg">
+              <img width="500" alt="Pink Flower Image" src="/week4/Image1.jpg">
+            </a>
+          </div>
+        <input type="radio" name="button" class="show" id="two">
+          <div class="slide">
+            <a target="_blank" title="WhiteFlower" href="/week4/Image2.jpg">
+              <img width="500" alt="White Flower Image" src="/week4/Image2.jpg">
+            </a>
+          </div>
+        <input type="radio" name="button" class="show" id="three">
+          <div class="slide">
+            <a target="_blank" title="NoFlower" href="/week4/Image3.jpg">
+              <img width="500" alt="No Flower Image" src="/week4/Image3.jpg">
+            </a>
+          </div>
+      </div>
+      <ul>
+        <li class="button"><label class="btn-lbl" for="one">1</label></li>
+        <li class="button"><label class="btn-lbl" for="two">2</label></li>
+        <li class="button"><label class="btn-lbl" for="three">3</label></li>
+      </ul>
+    </div>
+  </body>
+</html>

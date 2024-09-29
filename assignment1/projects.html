@@ -1,100 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
     <title>
       My Project
     </title>
-    <link rel="stylesheet" href="/assignment1/projects.css">
-    <link href="/assignment1/assignment1.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
-    <link href="/assignment1/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)">
-    <link href="/assignment1/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="projects.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
+    <link href="tablet1.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)">
+    <link href="phone1.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
   </head>
   <body class="body">
     <div id="wrapper">
-      <header>
-        <nav class="navbar">
-          <h5>
-            <a href="/assignment1/aboutme.html">
-              <img id="about-me-image" src="/assignment1/my-image.jpg" title="About me">
-            </a>
-            <a href="/index.html">
-              <button>
-                Home
-              </button>
-            </a>
-            <a href="/assignment1/projects.html">
-              <button>
-                Projects
-              </button>
-            </a>
-            <a href="/assignment1/contact.html">
-              <button>
-                Contact Me
-              </button>
-            </a>
-          </h5>
+      <header class="nav-container">
+        <nav class="sidebar">
+          <a href="aboutme.html">
+          <div class="sidebar-link">
+            <img src="about.png" title="about button">
+            <div class="sidebarnames">About</div>
+          </div>
+          </a>
+          <a href="/web-dev/index.html">
+          <div class="sidebar-link">
+            <img src="homepage.png" title="Home button">
+            <div class="sidebarnames">Home</div>
+          </div>
+          </a>
+          <a href="projects.html">
+          <div class="sidebar-link">
+            <img src="project.png" title="projects button">
+            <div class="sidebarnames">Projects</div>
+          </div>
+          </a>
+          <a href="contact.html">
+          <div class="sidebar-link">
+            <img src="contact.png" title="contact button">
+            <div class="sidebarnames">Contact</div>
+          </div>
+          </a>
         </nav>
       </header>
-      <article>
-        <h1>
-          Project Overview: Design, Implementation, and Maintenance of a Small Office Network
-        </h1>
-        <p>
-          Objective: To design, implement, and maintain a robust and efficient network for a small branch office.
-        </p>
-        <br>
-        <section>
-          <h3>
-            Network Design:
-          </h3>
-          <p>
-            <strong>Architecture:</strong> Utilized a three-tier design to ensure scalability and performance.
-          </p>
-          <p>
-            <strong>Redundancy:</strong> Deployed two routers connected to different ISPs to provide redundancy and minimize downtime. Implemented IP SLA with tracking to automatically reroute traffic through ISP2 in case ISP1 fails.
-          </p>
-          <p>
-            <strong>Switching:</strong> Installed two Cisco Catalyst switches for the LAN, segmenting the network into four VLANs: Human Resources, Executive Office, Sales, and IT.
-          </p>
-          <p>
-            <strong>Security:</strong> Integrated ASA firewalls to secure connections to the internet.
-          </p>
-          <br>
-          <h3>
-            End-User Connectivity:
-          </h3>
-          <p>
-            <strong>Telephony:</strong> Deployed Yealink IP telephones for each end user.
-          </p>
-          <p>
-            <strong>Power over Ethernet (PoE):</strong> Utilized PoE ports to connect both PCs and phones to the switches through a single port, simplifying cabling and reducing infrastructure costs.
-          </p>
-        </section>
+      <main>
+        <header>
+          <h1>My Projects</h1>
+          <p>Here are some of the slides that I made for fun when I was trying Ubuntu Operating System</p>
+        </header>
         
-      </article>
-      <footer>
-        <nav class="navbar">
-          <h6>
-            <a href="/assignment1/aboutme.html">
-              <img id="about-me-image" src="/assignment1/my-image.jpg" title="About me">
-            </a>
-            <a href="/index.html">
-              <button>
-                Home
-              </button>
-            </a>
-            <a href="/assignment1/projects.html">
-              <button>
-                Projects
-              </button>
-            </a>
-            <a href="/assignment1/contact.html">
-              <button>
-                Contact Me
-              </button>
-            </a>
-          </h6>
-        </nav>
-      </footer>
+          <div class="projects-grid">
+            
+              <article>
+                <figure>
+                  <img src="ipv4withlogo.png" alt="IPv4 image" title="ipv4">
+                  <figcaption>
+                    <h5>Slide 1: IPv4 Address Range</h5>
+                  </figcaption>
+                </figure>
+              </article>
+              <article>
+                <figure>
+                  <img src="ipv6add.jpg" alt="IPv6 image" title="ipv6">
+                  <figcaption>
+                    <h5>Slide 2: IPv6 Address Range</h5>
+                  </figcaption>
+                </figure>
+              </article>
+
+              <article>
+                <figure>
+                  <img src="OSI&TCP-IP.jpg" alt="OSI&TCP-IP image" title="osi&tcpip">
+                  <figcaption>
+                    <h5>Slide 3: OSI & TCP/IP Models</h5>
+                  </figcaption>
+                </figure>
+              </article>
+
+              <article>
+                <figure>
+                  <img src="telnetbasics.png" alt="Telnet image" title="telnet">
+                  <figcaption>
+                    <h5>Slide 4: Telnet Basics</h5>
+                  </figcaption>
+                </figure>
+              </article>
+
+              <article>
+                <figure>
+                  <img src="Telnet&SSH.png" alt="Telnet & SSH image" title="telnet&ssh">
+                  <figcaption>
+                    <h5>Slide 5: Telnet & SSH Configs</h5>
+                  </figcaption>
+                </figure>
+              </article>
+
+              <article>
+                <figure>
+                  <img src="sshconfig.png" alt="SSH image" title="ssh">
+                  <figcaption>
+                    <h5>Slide 6: SSH Configs</h5>
+                  </figcaption>
+                </figure>
+              </article>
+            
+            </div>
+        
+      </main>
+    </div>
   </body>
 </html>
