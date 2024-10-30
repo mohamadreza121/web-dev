@@ -1,0 +1,54 @@
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/app.css' />
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="@fortawesome/fontawesome-free/css/all.min.css">
+  <script src="Script/app.js"></script>
+  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home">INFR3120</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <% if (title=="Home") { %>
+              <a class="nav-link active" href="/home">
+             <% } else { %>
+              <a class="nav-link" href="/home">
+             <% } %>
+              <i class="fa-solid fa-house"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <% if (title=="About Us") { %>
+              <a class="nav-link active" href="/about">
+            <% } else { %>
+              <a class="nav-link" href="/about">
+            <% } %>
+            <i class="fa-solid fa-info"></i>About Us</a>
+          </li>
+          <li class="nav-item">
+            <% if (title=="Projects") { %>
+              <a class="nav-link active" href="/projects">
+             <% } else { %>
+              <a class="nav-link" href="/projects">
+             <% } %>
+            <i class="fa-solid fa-gear"></i>Projects</a>
+          </li>
+            <li class="nav-item">
+              <% if (title=="Contact Us") { %>
+                <a class="nav-link active" href="/contact">
+               <% } else { %>
+                <a class="nav-link" href="/contact">
+               <% } %>
+            <i class="fa-regular fa-address-book"></i>Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
