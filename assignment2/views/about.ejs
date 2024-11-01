@@ -1,6 +1,54 @@
 <%- include('partials/_header') %>
-<main>
-  <h1>Welcome to My Portfolio</h1>
-  <p>This is the About Me page.</p>
-</main>
+<div class="container mt-5 content-container">
+  <header>
+    <h1 class="text-center text-secondary mb-4" id="name-title">About Me</h1>
+    <p class="intro-text">
+      Hello! My name is Mohammadreza Heidarpoor, and I’m 24 years old. I am currently pursuing a 
+      <strong>Bachelor of Information Technology – Networking and IT Security</strong> at 
+      <strong>Ontario Tech University</strong> in Oshawa, Ontario, with a projected graduation in 2027.
+    </p>
+    <p class="intro-text">
+      I have always had a passion for technology and problem-solving, which has naturally led me down the path of networking and IT security. 
+      Over the years, I have built a strong foundation in networking concepts, security practices, and technical problem-solving, which I 
+      continue to develop through both formal education and hands-on experience.
+    </p>
+    <p class="intro-text">
+      I’m an individual who is always looking for new ways to challenge myself and grow within the technology space. I pride myself on my 
+      ability to stay adaptable and continuously learn new skills, whether that’s through formal certifications or personal projects like 
+      video editing.
+    </p>
+    <p id="social-text" class="text-center mt-3">
+      Feel free to check out my Resume
+    </p>
+    <section class="text-center">
+      <a href="/content/Mohammadreza-Heydarpoor-RESUME-new.pdf" class="btn btn-primary" target="_blank">
+        <i class="fa-solid fa-download"></i> Download Resume
+      </a>
+    </section>
+  </header>
+
+  <main class="mt-5">
+    <div class="row columns-container">
+      <!-- Profile Image Section-->
+      <section class="col-md-6 text-center">
+        <figure>
+          <img src="/images/img-for-about-removebg-preview.png" alt="My Picture" width="320" height="275" id="profile-img" title="editor" class="img-fluid rounded">
+          <figcaption>
+            <h6>Video Editor</h6>
+          </figcaption>
+        </figure>
+      </section>
+      <!-- Video Section-->
+      <section class="col-md-6 text-center">
+        <figure>
+          <video width="320" height="275" controls title="editvideo" class="img-fluid rounded">
+            <source src="/video/videoedit30.mp4" type="video/mp4">
+            <source src="/video/videoedit30.ogv" type="video/ogv">
+          </video>
+          <figcaption><h6>Edited Video</h6></figcaption>
+        </figure>
+      </section>
+    </div>
+  </main>
+</div>
 <%- include('partials/_footer') %>
