@@ -1,0 +1,30 @@
+<%- include('partials/_header') %>
+<main class="container">
+  <div class="row">
+    <div class="offset-md-1 col-md-10">
+      <h1><%= title %></h1>
+    <table class="table table-boarded table-striped table-hover">
+      <!-- Table Header -->
+       <tr class="d-flex">
+        <tr class="text-center col-2">Name</tr>
+        <tr class="text-center col-2">Author</tr>
+        <tr class="text-center col-2">Published</tr>
+        <tr class=" col-6">Description</tr>
+        <tr class="text-center col-1">Price</tr>
+       </tr>
+       <% for(let count=0;count<BookList.length;count++) { %>
+        <tr class="d-flex">
+          <td class="text-center col-2"><%= Booklist[count].Name %></td>
+          <td class="text-center col-2"><%= Booklist[count].Author %></td>
+          <td class="text-center col-1"><%= Booklist[count].Published %></td>
+          <td class=" col-6"><%= Booklist[count].Description %></td>
+          <td class="text-center col-1"><%= Booklist[count].Price %></td>
+        </tr>
+        <% } %>
+    </table>
+    </div>
+  </div>
+</main>
+
+
+<%- include('partials/_footer')  %>

@@ -1,0 +1,57 @@
+<%- include('partials/_header') %>
+<main class="container mt-5">
+  <article class="text-center">
+    <h1><i class="fa-regular fa-address-book"></i>Best Way To Contact Me</h1>
+    <hr class="my-4">
+    
+    <div class="contact-form-container">
+      <form class="contact-form p-4 border rounded bg-light" action="/submit-contact" method="POST">
+        <h2 class="mb-4 text-secondary"><i class="fa-solid fa-envelope"></i> Contact Me</h2>
+
+        <!-- Name Field -->
+        <div class="mb-3 text-start ms-2 me-2">
+          <label for="name" class="form-label ms-1"><i class="fa-solid fa-user"></i> Name:</label>
+          <input type="text" class="form-control" id="name" name="name" required autocomplete="name">
+        </div>
+
+        <!-- Email Field -->
+        <div class="mb-3 text-start ms-2 me-2">
+          <label for="email" class="form-label ms-1"><i class="fa-solid fa-envelope"></i> Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required autocomplete="email">
+        </div>
+
+        <!-- Subject Field -->
+        <div class="mb-3 text-start ms-2 me-2">
+          <label for="subject" class="form-label ms-1"><i class="fa-solid fa-tag"></i> Subject:</label>
+          <input type="text" class="form-control" id="subject" name="subject" autocomplete="off">
+        </div>
+
+        <!-- Message Field -->
+        <div class="mb-3 text-start ms-2 me-2">
+          <label for="message" class="form-label ms-1"><i class="fa-solid fa-comment"></i> Message:</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-check text-start mb-3 ms-2 me-2">
+          <input type="checkbox" class="form-check-input" id="no-message" name="no-message">
+          <label class="form-check-label" for="no-message">I don't want to write a message</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-dark"><i class="fa-solid fa-paper-plane"></i> Submit</button>
+      </form>
+    </div>
+    
+    <section class="mt-4">
+      <h4 id="ending" class="text-secondary">I will reach out to you as soon as possible!</h4>
+    </section>
+    <section>
+      <h5 id="ending2">
+        You can also reach out to me through email
+        <a href="mailto:mrheidarpoor7@gmail.com" class="text-success"><i class="fa-solid fa-envelope"></i> mrheidarpoor7@gmail.com</a>
+      </h5>
+    </section>
+  </article>
+</main>
+<%- include('partials/_footer') %>
