@@ -2,7 +2,7 @@ let express = require('express');
 let router = express.Router();
 
 // Home page
-router.get('/home', (req, res) => {
+router.get('/', (req, res) => {
   res.render('home', { title: 'Home' });
 });
 
