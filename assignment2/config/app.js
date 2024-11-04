@@ -14,16 +14,15 @@ let mongoose = require('mongoose');
 let DB = require('./db');
 
 // point my mongoose to the URI
-mongoose.connect(DB.URI);
 let mongoDB = mongoose.connection;
 mongoDB.on('error',console.error.bind(console, 'connection'));
 mongoDB.once('open',()=>{
   console.log('MongoDB Connected')
 });
-mongoose.connect(DB.URI,{useNewURIParser:true, useUnifiedTopology:true});
+mongoose.connect(DB.URI,{UseNewUrlParser:true, useUnifiedTopology:true});
 
 // View engine setup
-app.set('../views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '../views'));
 app.set('view engine', 'ejs');
 
 // Middleware setup
