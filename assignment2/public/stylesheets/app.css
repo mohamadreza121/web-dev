@@ -4,3 +4,25 @@ body {
 }
 
 
+.hover-effect {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-effect:hover {
+  transform: scale(1.1) translateZ(10px);
+  cursor: pointer;
+}
+
+
+.text-indigo {
+  color: #4200ac;
+}
+
+.link-fade {
+  display: inline-block;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.link-fade:active {
+  opacity: 0;
+}
